@@ -5,7 +5,7 @@ start-data:
 postgres-osm:
   image: openfirmware/postgres-osm
 osm2pgsql:
-  image: vincentds1/osm2pgsql
+  image: brelevenix/osm2pgsql
   links:
     - postgres-osm:pg
   volumes: 
@@ -14,9 +14,9 @@ osm2pgsql:
     - start-data
   command: /etc/start.sh
 shapefiles:
-  image: vincentds1/shapefiles
+  image: brelevenix/shapefiles
 osm-bright:
-  image: vincentds1/osm-bright
+  image: brelevenix/osm-bright
   volumes_from:
     - start-data
     - shapefiles
@@ -27,7 +27,7 @@ tiles-data:
   volumes:
     - /var/lib/tiles
 renderd:
-  image: vincentds1/renderd
+  image: brelevenix/renderd
   volumes_from:
     - start-data
     - osm-bright
