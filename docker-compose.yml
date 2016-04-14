@@ -5,7 +5,7 @@ start-data:
 postgres-osm:
   image: openfirmware/postgres-osm
 osm2pgsql:
-  image: vincentds1/osm2pgsql
+  image: brelevenix/osm2pgsql
   links:
     - postgres-osm:pg
   volumes: 
