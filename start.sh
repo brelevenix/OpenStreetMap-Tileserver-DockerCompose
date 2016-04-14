@@ -19,8 +19,8 @@ echo "docker-compose installed"
 cd ~
 sudo mkdir osm
 cd osm
-sudo wget https://s3.amazonaws.com/metro-extracts.mapzen.com/la-rochelle_france.osm.pbf
-sudo mv la-rochelle_france.osm.pbf import.osm.pbf
+sudo wget http://download.geofabrik.de/europe/france/bretagne-latest.osm.pbf
+sudo mv bretagne-latest.osm.pbf import.osm.pbf
 echo "OSM data imported"
 
 # Launch the containers
