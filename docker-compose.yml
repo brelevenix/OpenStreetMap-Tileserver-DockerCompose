@@ -16,7 +16,7 @@ osm2pgsql:
 shapefiles:
   image: vincentds1/shapefiles
 osm-bright:
-  image: brelevenix/osm-bright
+  image: vincentds1/osm-bright
   volumes_from:
     - start-data
     - shapefiles
