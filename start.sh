@@ -3,7 +3,6 @@
 # Docker, Docker-Compose, Import file
 
 # Install docker
-sudo apt-get update
 curl -o install.sh -sSL https://get.docker.com/
 sudo sh install.sh
 sudo groupadd docker
