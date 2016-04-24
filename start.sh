@@ -19,8 +19,11 @@ echo "docker-compose installed"
 cd ~
 sudo mkdir osm
 cd osm
-sudo wget https://s3.amazonaws.com/metro-extracts.mapzen.com/rennes_france.osm.pbf
-sudo mv rennes_france.osm.pbf import.osm.pbf
+file_data_osm=$2+"_france.osm.pbf"
+url_data="https://s3.amazonaws.com/metro-extracts.mapzen.com/"+$2+"_france.osm.pbf"
+sudo wget "$url_data"
+sudo mv "$file_data_osm" import.osm.pbf
+echo "$file_data_osm"
 echo "OSM data imported"
 
 # Launch the containers
