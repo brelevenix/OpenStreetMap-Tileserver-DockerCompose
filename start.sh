@@ -19,10 +19,13 @@ echo "docker-compose installed"
 cd ~
 sudo mkdir osm
 cd osm
-file_data_osm=$2"_france.osm.pbf"
-url_data="https://s3.amazonaws.com/metro-extracts.mapzen.com/"$2"_france.osm.pbf"
-sudo wget "$url_data"
-sudo mv "$file_data_osm" import.osm.pbf
+#file_data_osm=$2"_france.osm.pbf"
+#url_data="https://s3.amazonaws.com/metro-extracts.mapzen.com/"$2"_france.osm.pbf"
+#sudo wget "$url_data"
+#sudo mv "$file_data_osm" import.osm.pbf
+sudo wget http://download.geofabrik.de/europe/france/bretagne-latest.osm.pbf
+sudo mv bretagne-latest.osm.pbf import.osm.pbf
+
 echo "$file_data_osm"
 echo "OSM data imported"
 
