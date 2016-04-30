@@ -1,3 +1,4 @@
+#!/bin/sh
 #import command
 echo "exec import.sh"
 #get core
