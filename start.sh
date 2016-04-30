@@ -29,6 +29,10 @@ sudo mv bretagne-latest.osm.pbf import.osm.pbf
 echo "$file_data_osm"
 echo "OSM data imported"
 
+# Get the import bash file
+sudo wget https://raw.githubusercontent.com/brelevenix/OpenStreetMap-Tileserver-DockerCompose/master/import.sh
+echo "import bash imported"
+
 # Launch the containers
 cd ~
 sudo wget https://raw.githubusercontent.com/brelevenix/OpenStreetMap-Tileserver-DockerCompose/master/docker-compose.yml
