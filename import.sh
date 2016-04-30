@@ -1,6 +1,6 @@
 #!/bin/sh
 #import command
-echo "exec import.sh"
+
 #get core
 PROCS=$(grep --count ^processor /proc/cpuinfo)
 echo $PROCS > /var/lib/start/procs.txt
