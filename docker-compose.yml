@@ -3,7 +3,7 @@ start-data:
   volumes:
     - /var/lib/start
 postgres-osm:
-  image: openfirmware/postgres-osm
+  image: brelevenix/postgres-osm
 osm2pgsql:
   image: brelevenix/osm2pgsql
   links:
