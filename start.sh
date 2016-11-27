@@ -25,8 +25,8 @@ cd osm
 #sudo mv "$file_data_osm" import.osm.pbf
 #sudo wget http://download.geofabrik.de/europe/france/bretagne-latest.osm.pbf
 #sudo mv bretagne-latest.osm.pbf import.osm.pbf
-sudo wget http://download.geofabrik.de/europe/france-latest.osm.pbf
-sudo mv france-latest.osm.pbf import.osm.pbf
+#sudo wget http://download.geofabrik.de/europe/france-latest.osm.pbf
+#sudo mv france-latest.osm.pbf import.osm.pbf
 
 #echo "$file_data_osm"
 echo "OSM data imported"
