@@ -32,6 +32,6 @@ echo "OSM data extracted"
 
 # Launch the containers
 cd ~
-sudo wget -O docker-compose.yml https://raw.githubusercontent.com/brelevenix/OpenStreetMap-Tileserver-DockerCompose/master/docker-compose.yml
+sudo wget -O docker-compose.yml https://raw.githubusercontent.com/brelevenix/OpenStreetMap-Tileserver-DockerCompose/master/docker-compose-tregor.yml
 sudo docker-compose up -d
 echo "containers running"
