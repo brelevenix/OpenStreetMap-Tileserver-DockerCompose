@@ -22,18 +22,13 @@ osm-bright:
     - shapefiles
   links:
     - postgres-osm:pg
-tiles-data:
-  image: busybox
-  volumes:
-    - /var/lib/tiles
 renderd:
   image: vincentds1/renderd
   volumes_from:
     - start-data
     - osm-bright
-    - tiles-data
   ports:
     - "80:80"
   links:
     - postgres-osm:pg
-  command: /etc/start.sh
+  command: /etc/start_tregor.sh
