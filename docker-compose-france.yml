@@ -23,7 +23,7 @@ osm-bright:
   links:
     - postgres-osm:pg
 renderd:
-  image: vincentds1/renderd
+  image: brelevenix/renderd
   volumes_from:
     - start-data
     - osm-bright
