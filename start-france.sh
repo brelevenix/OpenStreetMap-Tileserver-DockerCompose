@@ -28,7 +28,7 @@ sudo wget http://download.geofabrik.de/australia-oceania/new-caledonia-latest.os
 echo "OSM data imported"
 
 # Merge files
-sudo osmosis --read-pbf guadeloupe-latest.osm.pbf --read-pbf guyane-latest.osm.pbf --read-pbf martinique-latest.osm.pbf --merge --merge --write-pbf import.osm
+sudo osmosis --read-pbf guadeloupe-latest.osm.pbf --read-pbf guyane-latest.osm.pbf --read-pbf martinique-latest.osm.pbf --merge --merge --write-pbf import.osm.pbf
 
 # Launch the containers
 cd ~
